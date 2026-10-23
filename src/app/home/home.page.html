@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Contenedor principal para organizar los elementos -->
+  <div class="home-container">
+
+    <!-- 4. Título en rojo, mayúsculas y centrado -->
+    <h1 class="titulo-rojo">Mi aplicación ionic</h1>
+
+    <!-- 3 & 5. Botón a la derecha en azul -->
+    <div class="contenedor-boton">
+      <ion-button color="primary" class="boton-derecha">
+        Accionar
+      </ion-button>
+    </div>
+
+    <!-- 6. Imagen centrada con borde en verde de grosor 3px -->
+    <div class="contenedor-imagen">
+      <img src="https://picsum.photos/300/200" alt="Imagen de ejemplo" class="imagen-verde" />
+    </div>
+
   </div>
+
 </ion-content>

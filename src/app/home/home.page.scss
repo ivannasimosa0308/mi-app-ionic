@@ -1,27 +1,44 @@
-#container {
+// Contenedor general para ordenar el espacio
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+
+/* 4. Título en rojo, mayúsculas y centrado */
+.titulo-rojo {
+  color: red;
+  text-transform: uppercase;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+/* 5. Botón a la derecha */
+.contenedor-boton {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinea el contenido (el botón) hacia la derecha */
+  margin-bottom: 20px;
+
+  .boton-derecha {
+    // Si necesitas forzar un azul específico que no sea el primary de Ionic:
+    --background: #007bff;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+/* 6. Imagen centrada con borde en verde de grosor 3px */
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  /* Centra la imagen horizontalmente */
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  .imagen-verde {
+    border: 3px solid green;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; // Opcional: esquinas ligeramente redondeadas
+  }
 }
